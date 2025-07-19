@@ -6,9 +6,13 @@ const ContactUs = () => {
   return (
     <section id="contact" className="py-16 bg-white">
       <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">Contact Us</h2>
-        <form className="grid gap-6 bg-gray-100 p-8 rounded-lg shadow-md">
-          <div className="grid md:grid-cols-2 gap-4">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8">
+          Contact Us
+        </h2>
+
+        <form className="grid gap-6 bg-gray-100 p-6 sm:p-8 rounded-lg shadow-md">
+          {/* Name & Email */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <input
               type="text"
               placeholder="Your Name"
@@ -23,6 +27,7 @@ const ContactUs = () => {
             />
           </div>
 
+          {/* Subject */}
           <input
             type="text"
             placeholder="Subject"
@@ -30,6 +35,7 @@ const ContactUs = () => {
             required
           />
 
+          {/* Message */}
           <textarea
             rows={5}
             placeholder="Your Message"
@@ -37,9 +43,10 @@ const ContactUs = () => {
             required
           ></textarea>
 
+          {/* Submit Button */}
           <button
             type="submit"
-            className="bg-teal-600 text-white font-semibold py-3 rounded hover:bg-teal-700 transition"
+            className="bg-teal-600 text-white font-semibold py-3 px-6 rounded hover:bg-teal-700 transition duration-200"
           >
             Send Message
           </button>
