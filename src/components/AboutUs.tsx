@@ -23,7 +23,7 @@ export default function AboutSection() {
           {/* Image or Illustration */}
           <div className="w-full h-64 sm:h-80 rounded-lg overflow-hidden shadow-lg">
             <img
-              src="/images/about.jpg"
+              src="/images/kelly.jpg"
               alt="Team at work"
               className="w-full h-full object-cover"
             />
